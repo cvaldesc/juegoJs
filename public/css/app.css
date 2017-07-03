@@ -1,0 +1,22 @@
+.imagen-caracter img{
+	background: #efefef;
+	width: 100px;
+	height: 100px;
+}
+.imagen-caracter a:focus img,.imagen-caracter a:active img{
+	border:1px solid blue;
+}
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.6;
+}
+
+.imagen-caracter--select img{
+	width: 63%;
+	height: 300px;
+	background: blue;
+}
+#handlebars-demo i.icon.ion-home{
+	font-family: 'Ionicons' !important;
+}

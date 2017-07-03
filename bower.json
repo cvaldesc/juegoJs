@@ -1,0 +1,10 @@
+{
+  "name": "GameVamp",
+  "version": "1.0.0",
+  "description": "puesta en practica aprendido en javascript creando un juego",
+  "dependencies": {
+    "bootstrap": "^3.2.0",
+    "Ionicons": "ionicons#^2.0.1",
+    "handlebars": "^4.0.10"
+  }
+}
