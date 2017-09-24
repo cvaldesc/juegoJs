@@ -10,5 +10,9 @@
     "grunt": "0.4.2",
     "grunt-contrib-copy": "0.4.1",
     "grunt-contrib-watch": "0.4.4"
+  },
+  "devDependencies": {
+    "grunt-contrib-handlebars": "^1.0.0",
+    "grunt-handlebars-layouts": "^0.3.0"
   }
 }

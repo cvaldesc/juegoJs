@@ -34,7 +34,7 @@
 				<div id="MuestraClan">
 	
 
-
+{{json}}
 	
 </div>
 
@@ -44,10 +44,13 @@
  
 
 	<select name="selectClan" id="SelecClan">
+		{{#each clan}}
+			<option value="{{@key}}">{{tipoClan}}</option>
+		{{/each}}
 	</select>
 </script>
 
-				 
+				 {{> seleccionClan}}
 				<p id="descripcionClan"></p>
 				<!-- seccion atributos-->
 				<section>

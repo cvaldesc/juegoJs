@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks("grunt-handlebars-layouts");
 
   var userConfig = require( './dir.config.js' );
   
@@ -13,7 +14,17 @@ module.exports = function(grunt) {
         tasks: ['copy:dev']
       }
     },
-    
+    handlebarslayouts: {
+      seleccionClan: {
+        files: {'public/*.html':'public/*.hbs'},
+        options: {
+          partials: [
+            'public/view/*.hbs'
+          ],
+          basePath: 'public/'
+        }
+      }
+    },
     copy: {
       dev: {
         files: [
@@ -44,7 +55,7 @@ module.exports = function(grunt) {
   grunt.initConfig( grunt.util._.extend( taskConfig, userConfig ) );
 
   grunt.registerTask('build', function(target) {
-    grunt.task.run(['copy:dev','watch']);
+    grunt.task.run(['handlebarslayouts','copy:dev','watch']);
   });
 
 
