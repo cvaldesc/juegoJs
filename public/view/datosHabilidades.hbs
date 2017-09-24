@@ -1,0 +1,13 @@
+{{#each habilidades}}
+			
+<div>
+	<h3>{{@key}}</h3>
+
+	{{#> tipoHabilidad-block }}
+		{{> tipoCaracteristica}}
+	{{/ tipoHabilidad-block}}
+	
+</div>
+	
+{{/each}}
+

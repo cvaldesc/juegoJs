@@ -6,17 +6,8 @@ window.addEventListener('DOMContentLoaded', function(argument) {
 INICIO = {
 	iniciarJuego: function(){
 
-		var pejVampiro = fichaVampiro;
-		console.log(pejVampiro);
-		var json = JSON.stringify(pejVampiro);
-		console.log(json);
 		var CrearBtn = document.getElementById("btnCrear");
-		Handlebars.registerPartial('seleccionClan', '{{json}}');
-		
-		//Carga de Template
-		TEMPLATE.CompilarTemplate(TEMPLATE.GetElementClan, pejVampiro ,TEMPLATE.IdPublicarTempalte.idClan);
-		
-		
+
 		var ClanSeleccionado = document.getElementById('SelecClan').value;
 		EVENTOS.obtenerValores(ClanSeleccionado);
 

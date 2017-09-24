@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     watch: {
       public: {
         files: ['public/**'],
-        tasks: ['copy:dev']
+        tasks: ['handlebarslayouts']
       }
     },
     handlebarslayouts: {
@@ -21,7 +21,8 @@ module.exports = function(grunt) {
           partials: [
             'public/view/*.hbs'
           ],
-          basePath: 'public/'
+          basePath: 'public/',
+          context:['public/json/*.json']
         }
       }
     },

@@ -31,26 +31,10 @@
 			
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2>Tipo de Clan</h2>
-				<div id="MuestraClan">
-	
-
-{{json}}
-	
-</div>
-
-
-
-<script id="selectClan" type="text/x-handlebars-template">
- 
-
-	<select name="selectClan" id="SelecClan">
-		{{#each clan}}
-			<option value="{{@key}}">{{tipoClan}}</option>
-		{{/each}}
-	</select>
-</script>
-
-				 {{> seleccionClan}}
+				{{> seleccionClan  }}
+				<h2>Generacion</h2>
+				<p>{{generacion}}</p>
+				
 				<p id="descripcionClan"></p>
 				<!-- seccion atributos-->
 				<section>
@@ -58,54 +42,8 @@
 					<br>
 					<hr>
 					<br>
-					<!-- Atributos fisicos-->
-					<div>
-						<h3>Fisicos</h3>
-						<label >
-							Fuerza
-							<input type="number" value="0" min="0" max="5">
-						</label>
-						<label >
-							Destreza
-							<input type="number" value="1" min="0" max="5">
-						</label>
-						<label >
-							Resistencia
-							<input type="number" value="4" min="0" max="5">
-						</label>
-					</div>
-					<!-- Atributos sociales-->
-					<div>
-						<h3>Sociales</h3>
-						<label >
-							Carisma
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Manipulación
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Apariencia
-							<input type="number" min="1" max="5">
-						</label>
-					</div>
-					<!-- Atributos Mentales-->
-					<div>
-						<h3>Mentales</h3>
-						<label >
-							Percepción
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Inteligencia
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Astucia
-							<input type="number" min="1" max="5">
-						</label>
-					</div>
+					{{> datosAtributos}}
+					
 					<br>
 					<hr>
 					<br>
@@ -116,54 +54,7 @@
 					<br>
 					<hr>
 					<br>
-					<!-- Habilidades talentos-->
-					<div>
-						<h3>Fisicos</h3>
-						<label >
-							Fuerza
-							<input type="number" value="0" min="0" max="5">
-						</label>
-						<label >
-							Destreza
-							<input type="number" value="1" min="0" max="5">
-						</label>
-						<label >
-							Resistencia
-							<input type="number" value="4" min="0" max="5">
-						</label>
-					</div>
-					<!-- Habilidades tecnicas-->
-					<div>
-						<h3>Sociales</h3>
-						<label >
-							Carisma
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Manipulación
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Apariencia
-							<input type="number" min="1" max="5">
-						</label>
-					</div>
-					<!-- Habilidades conocimiento-->
-					<div>
-						<h3>Mentales</h3>
-						<label >
-							Percepción
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Inteligencia
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Astucia
-							<input type="number" min="1" max="5">
-						</label>
-					</div>
+					{{> datosHabilidades}}
 				</section>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -177,10 +68,8 @@
 	<script src="/js/handlebars.runtime.js" type="text/javascript" ></script>
 	<script src="/js/handlebars.js" type="text/javascript" ></script>
 	<script src="/js/fichaGeneral.js" type="text/javascript" ></script>
-	<script src="/js/fichaVampiro.js" type="text/javascript" ></script>
 	<script src="/js/etapasPersonaje.js" type="text/javascript" ></script>
 	<script src="/js/manejosDeDatos.js" type="text/javascript" ></script>
-	<script src="/js/template.js" type="text/javascript" ></script>
 	<script src="/js/app.js" type="text/javascript" ></script>
 	
 </html>

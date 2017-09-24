@@ -32,22 +32,26 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2>Tipo de Clan</h2>
 				<div id="MuestraClan">
-	
-
-
-	
-</div>
-
-
-
-<script id="selectClan" type="text/x-handlebars-template">
- 
-
-	<select name="selectClan" id="SelecClan">
-	</select>
-</script>
-
-				 
+				   
+					<select name="selectClan" id="SelecClan">
+							<option value="Assamitas">Assamitas</option>
+							<option value="Brujah">Brujah</option>
+							<option value="Gangrel">Gangrel</option>
+							<option value="Giovanni">Giovanni</option>
+							<option value="Lasombra">Lasombra</option>
+							<option value="Malkavian">Malkavian</option>
+							<option value="Nosferatu">Nosferatu</option>
+							<option value="Ravnos">Ravnos</option>
+							<option value="Seguidores de Set">Seguidores de Set</option>
+							<option value="Toreador">Toreador</option>
+							<option value="Tremere">Tremere</option>
+							<option value="Tzimice">Tzimice</option>
+							<option value="Ventrue">Ventrue</option>
+							<option value="Caitiff">Caitiff</option>
+					</select>
+				</div>				<h2>Generacion</h2>
+				<p>13</p>
+				
 				<p id="descripcionClan"></p>
 				<!-- seccion atributos-->
 				<section>
@@ -55,54 +59,65 @@
 					<br>
 					<hr>
 					<br>
-					<!-- Atributos fisicos-->
+					
+								
 					<div>
-						<h3>Fisicos</h3>
-						<label >
-							Fuerza
-							<input type="number" value="0" min="0" max="5">
-						</label>
-						<label >
-							Destreza
-							<input type="number" value="1" min="0" max="5">
-						</label>
-						<label >
-							Resistencia
-							<input type="number" value="4" min="0" max="5">
-						</label>
+						<h3>fisicos</h3>
+					
+								<label >
+									fuerza
+									<input type="number" value="4" min="0" max="5">
+								</label>
+								<label >
+									destreza
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									resistencia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+						
 					</div>
-					<!-- Atributos sociales-->
+						
+								
 					<div>
-						<h3>Sociales</h3>
-						<label >
-							Carisma
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Manipulación
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Apariencia
-							<input type="number" min="1" max="5">
-						</label>
+						<h3>sociales</h3>
+					
+								<label >
+									carisma
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									manipulacion
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									apariencia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+						
 					</div>
-					<!-- Atributos Mentales-->
+						
+								
 					<div>
-						<h3>Mentales</h3>
-						<label >
-							Percepción
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Inteligencia
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Astucia
-							<input type="number" min="1" max="5">
-						</label>
+						<h3>mentales</h3>
+					
+								<label >
+									percepcion
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									inteligencia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									astucia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+						
 					</div>
+						
+					
 					<br>
 					<hr>
 					<br>
@@ -113,54 +128,148 @@
 					<br>
 					<hr>
 					<br>
-					<!-- Habilidades talentos-->
+								
 					<div>
-						<h3>Fisicos</h3>
-						<label >
-							Fuerza
-							<input type="number" value="0" min="0" max="5">
-						</label>
-						<label >
-							Destreza
-							<input type="number" value="1" min="0" max="5">
-						</label>
-						<label >
-							Resistencia
-							<input type="number" value="4" min="0" max="5">
-						</label>
+						<h3>talentos</h3>
+					
+								<label >
+									alerta
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									atletismo
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									callejeo
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									consciencia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									empatia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									expresion
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									intimidacion
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									liderazgo
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									pelea
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									subterfujio
+									<input type="number" value="0" min="0" max="5">
+								</label>
+						
 					</div>
-					<!-- Habilidades tecnicas-->
+						
+								
 					<div>
-						<h3>Sociales</h3>
-						<label >
-							Carisma
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Manipulación
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Apariencia
-							<input type="number" min="1" max="5">
-						</label>
+						<h3>tecnicas</h3>
+					
+								<label >
+									armasCC
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									armasDeFuego
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									conducir
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									etiqueta
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									hurto
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									interpretacion
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									pericias
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									sigilo
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									supervivencia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									tratoConAnimales
+									<input type="number" value="0" min="0" max="5">
+								</label>
+						
 					</div>
-					<!-- Habilidades conocimiento-->
+						
+								
 					<div>
-						<h3>Mentales</h3>
-						<label >
-							Percepción
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Inteligencia
-							<input type="number" min="1" max="5">
-						</label>
-						<label >
-							Astucia
-							<input type="number" min="1" max="5">
-						</label>
+						<h3>concocimientos</h3>
+					
+								<label >
+									academicismo
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									ciencia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									finanzas
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									informatica
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									investigacion
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									leyes
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									medicina
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									ocultismo
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									politica
+									<input type="number" value="0" min="0" max="5">
+								</label>
+								<label >
+									tecnologia
+									<input type="number" value="0" min="0" max="5">
+								</label>
+						
 					</div>
+						
+					
 				</section>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -174,10 +283,8 @@
 	<script src="/js/handlebars.runtime.js" type="text/javascript" ></script>
 	<script src="/js/handlebars.js" type="text/javascript" ></script>
 	<script src="/js/fichaGeneral.js" type="text/javascript" ></script>
-	<script src="/js/fichaVampiro.js" type="text/javascript" ></script>
 	<script src="/js/etapasPersonaje.js" type="text/javascript" ></script>
 	<script src="/js/manejosDeDatos.js" type="text/javascript" ></script>
-	<script src="/js/template.js" type="text/javascript" ></script>
 	<script src="/js/app.js" type="text/javascript" ></script>
 	
 </html>
