@@ -5,6 +5,9 @@ window.addEventListener('DOMContentLoaded', function(argument) {
 INICIO = {
 	iniciarJuego: function(){
 
+		var Personaje = new Object();
+
+
 		var CrearBtn = document.getElementById("btnCrear");
 
 		//Clan
@@ -20,20 +23,9 @@ INICIO = {
 		var HabilidadesTalentos = document.getElementById('talentos').getElementsByTagName('INPUT');
 		var HabilidadesTecnicas = document.getElementById('tecnicas').getElementsByTagName('INPUT');
 		var HabilidadesConocimientos = document.getElementById('conocimientos').getElementsByTagName('INPUT');
-
-
-
-		document.getElementById('descripcionClan').innerHTML = ClanSeleccionado;
 		
-		console.log(ClanSeleccionado);
-
-		ClanSeleccionado.addEventListener("change", function(ev) {
-			console.log(ClanSeleccionado.value);
-		});
-		//console.log(AtributosFisicos.getElementsByTagName('INPUT'));
-		//console.log(AtributosSociales.getElementsByTagName('INPUT'));
-		//console.log(AtributosMentales.getElementsByTagName('INPUT'));
-		
+		//obtenerClan
+		escuchar(ClanSeleccionado);
 
 		//obtenerAtributos
 		ObtenerCaracteristicas(AtributosFisicos);
@@ -45,24 +37,37 @@ INICIO = {
 		ObtenerCaracteristicas(HabilidadesTecnicas);
 		ObtenerCaracteristicas(HabilidadesConocimientos);
 
+		CrearBtn.addEventListener("click",function () {
+			ETAPASPERSONAJE.crearPesonaje(Personaje);
+
+			console.log(Personaje);
+		});
+
+		//Recorre los atributos y le pasa el elemnto  a los atributos 
 		function ObtenerCaracteristicas(TipoAtributos){
 			for (var i = 0; i < TipoAtributos.length; i++) {
 				TipoAtributos[i];
 				escuchar(TipoAtributos[i]);
+				
 			};
-			function escuchar (i) {
-				// body...
-				console.log(i.name);
-				console.log(i.value);
-				i.addEventListener("change",function () {
-					// body...
-					console.log(this.name);
-					console.log(this.value);
-				});
+			
+		};
 
-			}
-		}
-		
+		//escucha los cambios en los input
+		function escuchar (i) {
+			Personaje[i.name] = i.value;
+			i.addEventListener("change",function () {
+				for(var carac in Personaje){
+					if(carac === this.name){
+						Personaje[carac] = this.value;
+					}
+				}
+				//largo de un objeto
+				//console.log( Object.keys(Personaje).length);
+				console.log(Personaje);
+			});
+
+		};
 		
 	}
 }

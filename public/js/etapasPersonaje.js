@@ -1,6 +1,6 @@
 ETAPASPERSONAJE = {
-	crearPesonaje:{
-		
+	crearPesonaje:function(Personaje){
+		DATOS.grabar(Personaje);
 	},
 	editarPersonaje: function () {
 		/* body... */
