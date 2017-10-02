@@ -65,7 +65,7 @@
 	"sire": "",
 	"atributos": {
 		"fisicos": {
-			"fuerza":4,
+			"fuerza":0,
 			"destreza":0,
 			"resistencia":0
 		},
@@ -105,7 +105,7 @@
 			"supervivencia":0,
 			"tratoConAnimales":0
 		},
-		"concocimientos":{
+		"conocimientos":{
 			"academicismo":0,
 			"ciencia":0,
 			"finanzas":0,
