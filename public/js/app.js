@@ -8,12 +8,23 @@ INICIO = {
 
 		var CrearBtn = document.getElementById("btnCrear");
 
-		var ClanSeleccionado = document.getElementById('SelecClan').value;
-		EVENTOS.obtenerValores(ClanSeleccionado);
+		var ClanSeleccionado = document.getElementById('SelecClan');
+		var AtributoSeleccionado = document.getElementById('atributos');
+
+		//console.log(AtributoSeleccionado);
 
 
-		document.getElementById('descripcionClan').innerHTML = ClanSeleccionado;
-		console.log(ClanSeleccionado);
+		
+
+		ClanSeleccionado.addEventListener('change', function(){
+			document.getElementById('descripcionClan').innerHTML = ClanSeleccionado.value;
+			console.log(ClanSeleccionado);
+		});
+
+		AtributoSeleccionado.addEventListener('change', function(){
+			AtributoSeleccionado = AtributoSeleccionado.getElementsByTagName("INPUT");
+			console.log(AtributoSeleccionado.value);
+		});
 	}
 }
 
